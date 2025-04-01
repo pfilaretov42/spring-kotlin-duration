@@ -1,0 +1,19 @@
+### test java duration
+POST http://localhost:8080/java/duration
+Content-Type: application/json
+
+{
+  "id": "1",
+  "name": "Jim",
+  "duration": "PT1S"
+}
+
+### test kotlin duration
+POST http://localhost:8080/kotlin/duration
+Content-Type: application/json
+
+{
+  "id": "1",
+  "name": "Jim",
+  "duration": "PT1S"
+}
