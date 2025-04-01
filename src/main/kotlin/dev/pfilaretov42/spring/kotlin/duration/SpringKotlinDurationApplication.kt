@@ -28,10 +28,9 @@ class DurationController {
     }
 
     /**
-     * Returns HTTP 500:
-     * com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of
-     * `kotlin.time.Duration` (no Creators, like default constructor, exist):
-     * no String-argument constructor/factory method to deserialize from String value ('PT1S')
+     * Returns HTTP 400:
+     * org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error:
+     * Cannot deserialize value of type `long` from String "PT1S": not a valid `long` value
      */
     @PostMapping("/kotlin/duration")
     fun postDuration(@RequestBody dto: KotlinDurationDto) {
