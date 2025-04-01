@@ -14,6 +14,8 @@ Content-Type: application/json
 
 {
   "id": "1",
-  "name": "Jim",
-  "duration": "PT1S"
+  "nested": {
+    "name": "Jim",
+    "duration": "PT1S"
+  }
 }

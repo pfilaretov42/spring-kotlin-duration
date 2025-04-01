@@ -45,8 +45,13 @@ data class JavaDurationDto(
     val duration: java.time.Duration,
 )
 
-data class KotlinDurationDto(
+class KotlinDurationDto(
     val id: String,
+    val nested: NestedKotlinDurationDto,
+)
+
+class NestedKotlinDurationDto(
     val name: String,
     val duration: kotlin.time.Duration,
+//    val duration: kotlin.time.Duration? = null,
 )
